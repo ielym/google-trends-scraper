@@ -1,0 +1,8 @@
+# gt-scraper 依赖
+requests>=2.31
+pandas>=2.0
+# 可选（bigquery.py 需要）
+# google-cloud-bigquery>=3.0
+# GoogleTrends/data 下载不需要额外依赖
+# 浏览器导出（trendspyg 的 CSV 路径）需要 selenium + Chrome，本项目脚本不强制
+# selenium>=4.20

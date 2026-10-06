@@ -1,0 +1,25 @@
+{
+  "proxy": "http://127.0.0.1:10808",
+  "direct": false,
+  "hl": "en-US",
+  "tz": 360,
+  "request_delay_s": 4.0,
+  "max_retries": 3,
+  "backoff_s": 8.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "github": {
+    "owner": "GoogleTrends",
+    "repo": "data",
+    "branch": "master"
+  },
+  "bigquery": {
+    "project": "bigquery-public-data",
+    "dataset": "google_trends",
+    "tables": [
+      "top_terms",
+      "top_rising_terms",
+      "international_top_terms",
+      "international_top_rising_terms"
+    ]
+  }
+}

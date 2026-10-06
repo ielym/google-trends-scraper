@@ -1,0 +1,30 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- 虚拟环境 ---
+.venv/
+venv/
+env/
+
+# --- 运行时产物（由脚本生成，不入库） ---
+out/
+data/
+downloads/
+
+# --- 本地配置与密钥（示例模板保留） ---
+config.json
+.env
+*.local
+*.secret
+
+# --- IDE / OS ---
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

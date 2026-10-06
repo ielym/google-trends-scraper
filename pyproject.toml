@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gt-scraper"
+version = "0.1.0"
+description = "Google Trends 全量数据面抓取工具：Explore / Trending Now / RSS / Autocomplete / Datastore / BigQuery / 官方 API alpha"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "ielym", email = "ieluoyiming@163.com" }]
+keywords = ["google-trends", "scraping", "trends", "explore", "rss", "bigquery"]
+dependencies = [
+    "requests>=2.31",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+bigquery = ["google-cloud-bigquery>=3.0"]
+browser = ["selenium>=4.20"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+gt-scraper = "scripts.fetch_all:main"
+
+[tool.setuptools]
+packages = ["gt_scraper", "scripts"]
+
+[tool.setuptools.package-data]
+gt_scraper = ["py.typed"]
